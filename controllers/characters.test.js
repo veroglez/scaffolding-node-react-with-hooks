@@ -1,5 +1,5 @@
-import characters from './characters';
 import charactersMock from '@common/characters.json';
+import characters from './characters';
 
 describe('/characters:', () => {
   it('/getCharacters:', () => {
