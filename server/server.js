@@ -1,3 +1,4 @@
+import cors from 'cors';
 import express from 'express';
 import createError from 'http-errors';
 import bodyParser from 'body-parser';
@@ -5,6 +6,7 @@ import routesCharacters from './routes/characters';
 
 const app = express();
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use('/characters', routesCharacters);
 
