@@ -1,0 +1,7 @@
+$breakpoint: (
+  small: 600px,
+);
+
+@mixin tablet { // > 601
+  @media (min-width: #{map-get($breakpoint, small)+1}) { @content; }
+}

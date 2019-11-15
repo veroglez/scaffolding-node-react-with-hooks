@@ -1,0 +1,4 @@
+**/*.html
+**/*.mock.js
+/src/serviceWorker.js
+/build
